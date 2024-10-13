@@ -22,13 +22,15 @@ build:
       --prefix="$PREFIX"
     make
     make install
-  number: 0
+  number: 1
 
 requirements:
   build:
     - {{ stdlib("c") }}
     - {{ compiler('c') }}
     - make
+    - libmaxminddb          # [build_platform != target_platform]
+    - ncurses               # [build_platform != target_platform]
   host:
     - libmaxminddb
     - ncurses
