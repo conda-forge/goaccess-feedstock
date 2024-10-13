@@ -13,15 +13,6 @@ source:
 
 build:
   skip: true  # [win]
-  script: |
-    ./configure \
-      --disable-debug \
-      --disable-dependency-tracking \
-      --enable-utf8 \
-      --enable-geoip=mmdb \
-      --prefix="$PREFIX"
-    make
-    make install
   number: 1
 
 requirements:
