@@ -1,5 +1,5 @@
 {% set name = "goaccess" %}
-{% set version = "1.10.1" %}
+{% set version = "1.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://tar.goaccess.io/goaccess-{{ version }}.tar.gz
-  sha256: 32293bc6bc5f6d113e8490c8ff78a10bbc629aa23b0fb428534f53cc0c9a756e
+  sha256: b9b7484a413279863c7d92dc7dd4c19dcb55c0a2d138735efc18570bcc4eaa0e
   patches:
     - 0001-Patch-libncursesw-naming-on-darwin.patch
 
