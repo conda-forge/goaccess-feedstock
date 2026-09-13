@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-set -x
+set -ex
 
 ./configure \
+  --build="$BUILD" \
+  --host="$HOST" \
   --disable-debug \
   --disable-dependency-tracking \
   --enable-utf8 \
