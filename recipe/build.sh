@@ -9,6 +9,8 @@ set -ex
   --disable-dependency-tracking \
   --enable-utf8 \
   --enable-geoip=mmdb \
+  --with-getline \
+  --with-zlib \
   --prefix="$PREFIX"
 
 make bin2c

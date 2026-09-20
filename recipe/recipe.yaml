@@ -16,7 +16,7 @@ source:
 
 build:
   skip: win
-  number: 0
+  number: 1
   dynamic_linking:
     overlinking_behavior: error
 
@@ -32,6 +32,7 @@ requirements:
   host:
     - libmaxminddb
     - ncurses
+    - zlib
 
 tests:
   - requirements:
